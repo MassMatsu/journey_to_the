@@ -1,0 +1,235 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'M PLUS 1p', sans-serif;
+  color:#444;
+  line-height: 150%;
+  background-color:black;
+}
+
+p{
+  padding: 0;
+  margin: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.wrapper{
+  width:100%; 
+  height:100%; 
+
+ 
+  
+}
+/* .header{
+  width: 100%;
+  height: 80px;
+}
+.footer{
+  width: 100%;
+  height: 100px;
+} */
+h1{
+  width:280px;
+  margin-left: 150px;
+  padding-top: 20px;
+  font-size: 48px;
+  float: left;
+  color: rgba(255, 0, 0, 0.658);
+  /* background: rgba(255, 0, 0, 0.281); */
+}
+
+ul{
+  width: 500px;
+  height: 10px;
+  padding-top: 40px;
+  margin-right: 20px;
+  /* display: block; */
+  float: right;
+  /* background: rgba(238, 255, 0, 0.281); */
+}
+
+li{
+  float: left;
+  list-style: none;
+  font-size: 32px;
+  color: rgba(255, 0, 0, 0.233);
+}
+
+.lit{
+  color: rgba(255, 0, 0, 0.774);
+}
+
+/* ------------------------------------------------------------------- */
+.background-container{
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 1000px;
+  height: 750px;
+  background: url('img/bg_sanmyaku_alps.jpg');
+  background-size: 1000px 750px;
+  /* border-radius: 30px; */
+}
+
+.first{
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 1000px;
+  height: 750px;
+  background: url('img/bg_sanmyaku_alps.jpg');
+  background-size: 1000px 750px;
+  /* border-radius: 30px; */
+}
+
+.second{
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 1000px;
+  height: 750px;
+  background: url('img/bg_taki.jpg');
+  background-size: 1000px 750px;
+  /* border-radius: 30px; */
+}
+
+.third{
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 1000px;
+  height: 750px;
+  background: url('img/bg_hell_jigoku.jpg');
+  background-size: 1000px 750px;
+  /* border-radius: 30px; */
+}
+
+.ending{
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 1000px;
+  height: 750px;
+  background: url('img/bg01.jpg');
+  background-size: 1000px 750px;
+  /* border-radius: 30px; */
+}
+
+
+
+.left-top{
+  margin-top: 20px;
+  margin-left: 60px;
+  width: 400px;
+  height: 350px;
+  background: rgba(213, 226, 226, 0.479);
+  border-radius: 20px;
+  float: left; 
+}
+  
+.right-top{
+  margin-top: 20px;
+  margin-right: 60px;
+  width: 400px;
+  height: 350px;
+  background: rgba(213, 226, 226, 0.479);
+  border-radius: 20px;
+  float: right;
+  overflow: hidden;
+}
+
+.img-container{
+  width: 400px;
+  height: 300px;
+  /* background: url('img/monster04.png'); */
+  background-size: 400px 300px; 
+}
+
+.info-container{
+  padding-top: 10px;
+}
+
+.info-container .name{
+  width: 250px;
+  float: left;
+  text-align: center;
+  font-size: 32px;
+  /* background: rgba(255, 0, 0, 0.308); */
+}
+.info-container .hp{
+  width: 150px;
+  float: right;
+  font-size: 32px;
+  /* background: rgba(230, 250, 114, 0.493); */
+}
+/* ------------------------------------------------------------------------ */
+.left-bottom{
+  margin-top: 20px;
+  margin-left: 60px;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 400px;
+  height: 200px;
+  background: rgba(213, 226, 226, 0.479);
+  border-radius: 20px;
+  font-size: 20px;
+  float: left;
+}
+
+.right-bottom{
+  margin-top: 20px;
+  margin-right: 60px;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 400px;
+  height: 200px;
+  background: rgba(213, 226, 226, 0.479);
+  border-radius: 20px;
+  float: right;
+}
+
+input[type="submit"]{
+  width: 50%;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 102, 0, 0.884);
+  background: rgba(255, 208, 0, 0.363); 
+  font-size: 20px;
+  color: #444;
+}
+
+input[type="submit"]:hover{
+  background: rgba(255, 208, 0, 0.897);
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+.label{
+  display: block;
+  float: left;
+  width: 100px;
+  height: 50px;
+  margin: 5px;
+  border: 1px solid  rgba(255, 102, 0, 0.884);
+  background: rgba(255, 208, 0, 0.363);
+  border-radius: 5px;
+  padding-top: 0px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+}
+
+input[type="radio"]:checked + label{
+  background: rgba(255, 208, 0, 0.897);
+}
+
+.label:hover{
+  
+  border: 2px solid rgba(255, 102, 0, 0.884);
+}
+
+.alert{
+  color: rgba(255, 0, 0, 0.589);
+}
