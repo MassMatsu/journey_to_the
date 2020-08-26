@@ -291,7 +291,7 @@
   if(empty($_SESSION['distance'])) $_SESSION['distance'] = 0;
   if(!empty($stage) && $stage === 'ending') $_SESSION = array();
 
-  if($_SESSION['distance'] < 20000){
+  if($_SESSION['distance'] < 20000){    // $_SESSION['distance'] の値によって 変数$stage にそれぞれの値を入れてステージを変更する
     $stage = "first";
   }elseif($_SESSION['distance'] < 70000 && $_SESSION['distance'] >= 20000){
     $stage = "second";
@@ -310,7 +310,6 @@
     debug("\n".'POST送信あり startFlg: '.$startFlg.' attackFlg: '.$attackFlg.' specialFlg: '.$specialFlg.' run: '.$runFlg);
 
     if(empty($_POST['restart'])){   // リスタートではない場合 - スタートとリスタートで処理が違うので
-    
       if($startFlg){                        // スタートボタンの場合
         History::set('いざ天竺へ出発！！');
         init();  // 全て必要なの数値を用意
