@@ -365,7 +365,6 @@
           History::set($_SESSION['monster']->getName().'から逃げた！');
           createMonster($stage);     
         }
-        debug('here you go');
 
         if($_SESSION['hero']->getHp() <= 0){    // Hero の体力がなくなった場合 = ゲームオーバー
           gameOver();
