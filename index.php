@@ -289,7 +289,7 @@
 
   // POST送信がない場合の画面表示の準備 -------------------------------------------------------------------------------------
   if(empty($_SESSION['distance'])) $_SESSION['distance'] = 0;
-  if(!empty($stage) && $stage === 'ending') $_SESSION = array();
+ 
 
   if($_SESSION['distance'] < 20000){    // $_SESSION['distance'] の値によって 変数$stage にそれぞれの値を入れてステージを変更する
     $stage = "first";
@@ -397,6 +397,9 @@
       $_SESSION = array();            // 全てのセッションをリセット (または session_destroy() でもOK) unset($_SESSION['gameover']); unsetは特定のセッションの削除に使う
       debug('リスタート、トップ画面へ');
     }
+  }else{
+    $_SESSION = array();
+
   }
 
   
